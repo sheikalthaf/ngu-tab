@@ -1,0 +1,10 @@
+<ul [style.width]="vertical ? 'auto' : 100">
+  <ng-container *ngFor="let tab of mainData">
+    <li *ngIf="!tab.hide" [ngClass]="{active: tab.id === activeIndex, disabled: freezeOnActive && tab.id != activeIndex}" (click)="changeActive(tab.id, true)">
+      <div>{{tab.title}}</div>
+    </li>
+  </ng-container>
+</ul>
+<div class="nguTabContainer">
+  <ng-content select="ngu-tab-content"></ng-content>
+</div>

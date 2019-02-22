@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "tab": [
+        "dist/tab"
+      ],
+      "tab/*": [
+        "dist/tab/*"
+      ]
+    }
   }
 }

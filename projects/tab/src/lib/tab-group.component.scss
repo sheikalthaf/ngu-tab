@@ -1,0 +1,37 @@
+:host {
+  display: block;
+  background: white;
+  position: relative;
+  border: 1px solid #a7a9ac;
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    li {
+      div {
+        padding: 6px 15px;
+      }
+      &.active,
+      &:not(.disabled):hover {
+        div {
+          border-bottom: 2px solid #0066fe;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .nguTabContainer {
+    flex: 1;
+  }
+  &.verticals {
+    display: flex;
+    ul {
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+}
